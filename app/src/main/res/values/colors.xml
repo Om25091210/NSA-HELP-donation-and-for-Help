@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#2A2E43</color>
+    <color name="colorPrimaryDark">#2A2E43</color>
+    <color name="colorAccent">#FF402D</color>
+    <color name="bottomNavigationTintColor">#B2B2B2</color>
+    <color name="bottomNavigationSelectedColor">#FC4926</color>
+    <color name="Transparentnavigation">#00FFFF00</color>
+    <color name="greenflag">#F8AB6E</color>
+    <color name="leftcarddonaoranimals">#00FFFF</color>
+    <color name="rightcarddonaoranimals">#FF2CA9</color>
+    <color name="othergrad">#FFFF00</color>
+    <color name="clothgrad">#23CDBA</color>
+    <color name="clothgradRIGHT">#FFFF18</color>
+    <color name="news">#2EC803</color>
+    <color name="threesection">#a21c3f</color>
+    <color name="talksfeedbg">#750634</color>
+    <color name="talksmoderatedark">#D5355E</color>
+    <color name="talkslightmode">#FF6363</color>
+    <color name="bgoptionmodedark">#F3F3F3</color>
+
+
+    <color name="gray">#FCFCFC</color>
+
+    <!--colors for quizs-->
+    <color name="RoyalPink">#FF32AF</color>
+    <color name="Red">#FF1616</color>
+    <color name="Yellow">#FFDE59</color>
+    <color name="black">#000000</color>
+    <color name="blue">#38B6FF</color>
+    <color name="purple">#B159FF</color>
+    <color name="algaegreen">#618B63</color>
+    <color name="lightblue">#A0E8F5</color>
+    <color name="redpluspink">#D5355E</color>
+    <color name="brown">#6D4841</color>
+    <color name="green">#7ED957</color>
+    <color name="orange">#FF9D61</color>
+    <color name="diwali">#C23E89</color>
+    <color name="darkblue">#28295A</color>
+    <color name="trueyellow">#FFE605</color>
+
+    <color name="shadow">#393838</color>
+
+
+    <!--colors for light mode-->
+    <color name="contentBodyColor">#FCFCFC</color>
+    <color name="contentBodyColoroftimeline">#FCFCFC</color>
+    <color name="contentTextColor">#020000</color>
+    <color name="bottomNavigationBackground">#F7F7F7</color>
+    <color name="imageBorderColor">#E01E7A</color>
+    <color name="testingnews">#FAF1A1</color>
+    <color name="statusbar">#FFBD59</color>
+    <color name="miniTitle">#2A2E43</color>
+    <color name="gradient">#F48E40</color>
+    <color name="whiteTextColor">#fff</color>
+    <color name="miniTitleColor">#6F6A6A</color>
+    <color name="colorgradient">#FDB373</color>
+    <color name="featuredNewsContentColor">#8E909A</color>
+
+    <color name="gradientOrange">#FF416C</color>
+    <color name="gradientViolet">#8A52E9</color>
+    <color name="gradientLightYellow">#FB8218</color>
+    <color name="gradientLightYellowcopy">#FAA052</color>
+    <color name="gradientLightOrange">#FF641A</color>
+    <color name="gradientLightYellow2">#FFC92B</color>
+    <color name="gradientLightOrange2">#FF7765</color>
+    <color name="gradientOrange3">#F7A23C</color>
+    <color name="gradientLightBlue">#376DF6</color>
+    <color name="gradientLightGreen">#21E8AC</color>
+
+
+    <color name="bottomNavigationTextColor">#B2B2B2</color>
+    <color name="statusBarColor">#000</color>
+    <color name="whiteBodyColor">#FCFCFC</color>
+    <color name="darkTextColor">#020000</color>
+    <color name="primaryTextColor">#019AE8</color>
+    <color name="frutorial_title">#4c4c4c</color>
+
+
+    <!--colors for profile-->
+    <color name="profilePrimaryDark">#FF3B30</color>
+    <color name="profileAccentColor">#F7F7F7</color>
+    <color name="profileBackground">#fff</color>
+    <color name="blackTextColor">#000</color>
+    <color name="profileEditTextColor">#707070</color>
+
+
+    <!--colors for nongradientversion-->
+    <color name="cardColorTeal">#09CD95</color>
+    <color name="cardColorOrange">#FF651B</color>
+    <color name="cardColorYellow">#FF991F</color>
+    <color name="cardColorViolet">#8F51E3</color>
+    <color name="cardColorRed">#F94172</color>
+
+</resources>

@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:gl="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/parent.contentLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    app:cardBackgroundColor="#787877"
+    android:layout_row="0"
+    android:fitsSystemWindows="true"
+    android:layout_rowWeight="1"
+    android:layout_column="0"
+    android:layout_columnWeight="1"
+    android:layout_gravity="fill"
+    app:cardCornerRadius="15dp"
+    app:cardElevation="8dp"
+    app:cardUseCompatPadding="true"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <net.colindodd.gradientlayout.GradientRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:minHeight="100dp"
+            android:padding="10dp"
+            gl:end_color="@color/gradientLightYellow"
+            gl:orientation="LEFT_RIGHT"
+            gl:start_color="@color/testingnews"
+            tools:ignore="MissingClass">
+
+            <TextView
+                android:id="@+id/Maincategory"
+                style="@style/viewParent.headerText"
+                android:layout_width="146dp"
+                android:layout_height="45dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginEnd="53dp"
+                android:layout_toStartOf="@+id/imageView10"
+                android:layout_toEndOf="@+id/profilefeed"
+                android:gravity="center"
+                android:text="DONATION"
+                android:textColor="@color/colorPrimaryDark" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profilefeed"
+                android:scaleType="centerCrop"
+                android:layout_width="74dp"
+                android:layout_height="65dp"
+                android:src="@drawable/nsaicon" />
+
+            <TextView
+                android:id="@+id/category"
+                android:layout_marginTop="60dp"
+                android:layout_marginLeft="10dp"
+                style="@style/viewParent.headerText.homeCardContent"
+                android:layout_below="@id/Maincategory"
+                android:text="FOOD"
+                android:textSize="20dp"
+                android:textColor="@color/colorPrimaryDark" />
+
+            <TextView
+                android:id="@+id/location"
+                style="@style/viewParent.headerText.homeCardContent"
+                android:layout_width="189dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/category"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="14dp"
+                android:text="Seepat Chowk"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="20dp" />
+
+
+            <TextView
+                android:id="@+id/time"
+                style="@style/viewParent.headerText.homeCardContent"
+                android:layout_below="@id/location"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="14dp"
+                android:text="12/78/2002 06:36 pm"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="14dp" />
+
+
+            <Button
+                android:id="@+id/btnres"
+                style="@style/viewParent.headerText.homeCardContent"
+                android:layout_width="111dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/time"
+                android:layout_alignStart="@+id/imageoffeed"
+                android:layout_marginStart="2dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="-28dp"
+                android:background="@drawable/circlecornerbutton"
+                android:text="Respond"
+                android:textColor="#050505" />
+
+            <ImageView
+                android:id="@+id/imageView10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="-1dp"
+                gl:srcCompat="@android:drawable/ic_menu_sort_by_size" />
+
+            <ImageView
+                android:id="@+id/imageoffeed"
+                android:layout_width="126dp"
+                android:layout_height="100dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="0dp"
+                android:src="@drawable/food" />
+
+            <Button
+                android:id="@+id/desopen"
+                android:layout_width="111dp"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/btnres"
+                android:layout_alignStart="@+id/btnres"
+                android:layout_alignEnd="@+id/btnres"
+                android:layout_marginStart="0dp"
+                android:layout_marginEnd="-2dp"
+                android:layout_marginBottom="31dp"
+                android:background="@drawable/circlecornerbutton"
+                android:text="Description"
+                android:textStyle="bold" />
+
+
+        </net.colindodd.gradientlayout.GradientRelativeLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/postimg"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="@color/featuredNewsContentColor"
+                android:src="@drawable/loading"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/totalimages"
+                android:layout_width="82dp"
+                android:layout_height="0dp"
+                android:background="#0DFFFFFF"
+                android:text="+2"
+                android:textSize="30sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

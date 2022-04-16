@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:gl="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/contentBodyColor"
+    android:fitsSystemWindows="true"
+    app:statusBarBackground="@color/cardColorTeal"
+    tools:context="ProfileActivity">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:id="@+id/linearLayout6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/tooltimeline"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/testingnews"
+                app:layout_collapseMode="pin">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                    <net.colindodd.gradientlayout.GradientRelativeLayout
+                        android:id="@+id/gradientRelativeLayout"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:minHeight="100dp"
+                        android:padding="10dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        gl:end_color="@color/gradientLightYellow"
+                        gl:orientation="LEFT_RIGHT"
+                        gl:start_color="@color/testingnews"
+                        tools:ignore="MissingClass" />
+
+                    <ImageView
+                        android:id="@+id/dropmeter"
+                        android:layout_width="45dp"
+                        android:layout_height="40dp"
+                        android:onClick="bck"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.0"
+                        gl:srcCompat="@drawable/profileback" />
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/profile_image"
+                        android:layout_width="192dp"
+                        android:layout_height="192dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="14dp"
+                        android:layout_marginBottom="10dp"
+                        android:src="@drawable/nsadp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="@+id/gradientRelativeLayout"
+                        app:layout_constraintStart_toStartOf="@+id/gradientRelativeLayout"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/imageView13"
+                        android:layout_width="78dp"
+                        android:layout_height="48dp"
+                        android:src="@drawable/generate"
+                        android:onClick="generate"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/profile_image"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.94" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.appcompat.widget.Toolbar>
+
+            <TextView
+                style="@style/headerText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:text="Account Info"
+                android:textColor="@color/gradientLightYellowcopy" />
+
+            <RelativeLayout
+                android:id="@+id/relativename"
+                style="@style/profileDetailsLayout"
+                android:layout_height="50dp"
+                android:layout_marginStart="10dp">
+
+                <ImageView
+                    android:id="@+id/nameImageView"
+                    style="@style/profileDetailsImage"
+                    android:src="@drawable/ic_name" />
+
+                <TextView
+                    android:id="@+id/nameofprofile"
+                    style="@style/profileDetailsMiniText"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="13dp"
+                    android:layout_marginTop="14dp"
+                    android:layout_toRightOf="@id/nameImageView"
+                    android:text="developer"
+                    android:textColor="@color/gradientLightYellowcopy"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+            <View style="@style/proifleDetailsView" />
+
+            <RelativeLayout
+                android:id="@+id/relativemail"
+                style="@style/profileDetailsLayout"
+                android:layout_height="48dp"
+                android:layout_marginStart="10dp">
+
+                <ImageView
+                    android:id="@+id/emailImageView"
+                    style="@style/profileDetailsImage"
+                    android:src="@drawable/ic_email" />
+
+                <TextView
+                    android:id="@+id/emailofprofile"
+                    style="@style/profileDetailsMiniText"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginTop="14dp"
+                    android:layout_toRightOf="@id/emailImageView"
+                    android:text="developer@appsnipp.com"
+                    android:textColor="@color/gradientLightYellowcopy"
+                    android:textStyle="bold" />
+
+
+            </RelativeLayout>
+
+            <View style="@style/proifleDetailsView" />
+
+            <RelativeLayout
+                android:id="@+id/relativedonation"
+                style="@style/profileDetailsLayout"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp">
+
+                <Button
+                    android:id="@+id/Mydonation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/user_button_bg"
+                    android:onClick="donationSection"
+                    android:text="My Donation"
+                    android:textColor="@color/whiteTextColor"
+                    android:textStyle="bold" />
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                style="@style/profileDetailsLayout"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp">
+
+                <Button
+                    android:id="@+id/register"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/user_button_bg"
+                    android:onClick="requestHelp"
+                    android:text="Help requests"
+                    android:textColor="@color/whiteTextColor"
+                    android:textStyle="bold" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relativepickup"
+                style="@style/profileDetailsLayout"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp">
+
+                <Button
+                    android:id="@+id/Mypickup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/user_button_bg"
+                    android:onClick="Pickupsection"
+                    android:text="My Pickup"
+                    android:textColor="@color/whiteTextColor"
+                    android:textStyle="bold" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                style="@style/profileDetailsLayout"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp">
+
+                <Button
+                    android:id="@+id/tohelp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/user_button_bg"
+                    android:onClick="tohelp"
+                    android:text="to Help"
+                    android:textColor="@color/whiteTextColor"
+                    android:textStyle="bold" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/btnLogoutre"
+                style="@style/profileDetailsLayout"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp">
+
+                <Button
+                    android:id="@+id/btnLogout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/user_button_bg"
+                    android:text="LogOut"
+                    android:textColor="@color/whiteTextColor"
+                    android:textStyle="bold" />
+
+
+            </RelativeLayout>
+
+            <View style="@style/proifleDetailsView" />
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

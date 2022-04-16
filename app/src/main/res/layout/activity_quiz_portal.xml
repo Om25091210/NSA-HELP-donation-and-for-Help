@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:gl="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/contentBodyColor"
+    tools:context=".quizPortal">
+
+
+    <View
+        android:id="@+id/view21"
+        android:layout_width="0dp"
+        android:layout_height="360dp"
+        android:background="@drawable/ic_diyatwo"
+        gl:layout_constraintBottom_toBottomOf="parent"
+        gl:layout_constraintEnd_toEndOf="parent"
+        gl:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView50"
+        android:layout_width="48dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="10dp"
+        android:onClick="closecut"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        gl:srcCompat="@drawable/ic_close_post"
+        tools:ignore="VectorDrawableCompat" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/play"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        app:cardCornerRadius="15dp"
+        app:cardPreventCornerOverlap="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.19999999">
+
+        <net.colindodd.gradientlayout.GradientRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:minHeight="100dp"
+            android:padding="10dp"
+            gl:end_color="@color/othergrad"
+            gl:orientation="LEFT_RIGHT"
+            gl:start_color="@color/colorAccent">
+
+            <ImageView
+                style="@style/homeCardImage"
+                android:maxHeight="90dp"
+                android:src="@drawable/ic_poll" />
+
+            <TextView
+                android:id="@+id/textViewSub5Title"
+                style="@style/viewParent.headerText.HomeCardTitle"
+                android:text="PLAY" />
+
+        </net.colindodd.gradientlayout.GradientRelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/Results"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        app:cardCornerRadius="15dp"
+        app:cardPreventCornerOverlap="true"
+        app:layout_constraintBottom_toTopOf="@+id/upcoming"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/play"
+        gl:end_color="@color/othergrad"
+        gl:orientation="LEFT_RIGHT"
+        gl:start_color="@color/rightcarddonaoranimals">
+
+        <net.colindodd.gradientlayout.GradientRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:minHeight="100dp"
+            android:padding="10dp"
+            gl:end_color="@color/leftcarddonaoranimals"
+            gl:orientation="LEFT_RIGHT"
+            gl:start_color="@color/primaryTextColor">
+
+            <ImageView
+                style="@style/homeCardImage"
+                android:maxHeight="90dp"
+                android:src="@drawable/ic_prizeresult" />
+
+            <TextView
+                android:id="@+id/textViewprogress"
+                style="@style/viewParent.headerText.HomeCardTitle"
+                android:text="LEADERBOARD" />
+
+        </net.colindodd.gradientlayout.GradientRelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/upcoming"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="150dp"
+        app:cardCornerRadius="15dp"
+        app:cardPreventCornerOverlap="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Results">
+
+        <net.colindodd.gradientlayout.GradientRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:minHeight="100dp"
+            android:padding="10dp"
+            gl:end_color="@color/othergrad"
+            gl:orientation="LEFT_RIGHT"
+            gl:start_color="@color/news">
+
+            <ImageView
+                style="@style/homeCardImage"
+                android:maxHeight="90dp"
+                android:src="@drawable/ic_upcoming" />
+
+            <TextView
+                android:id="@+id/textViewSub5Titleup"
+                style="@style/viewParent.headerText.HomeCardTitle"
+                android:text="UPCOMING" />
+
+        </net.colindodd.gradientlayout.GradientRelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

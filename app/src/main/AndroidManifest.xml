@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.aryomtech.nsabilaspur">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar"
+        tools:targetApi="q">
+        <activity android:name=".Upcoming" />
+        <activity
+            android:name=".QR"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".QrResult"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ScanQr"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".LeaderBoard"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Results"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".quizPortal"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".QUIZ"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".POLLS"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Maintenance"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".post"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".THEthreeSECTIONS"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Descriptionrescue"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".giverrescue"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".searchActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Tohelp"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Descriptionsectionsack"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".giversack"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".vendorsIMAGE"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Setcard"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Vendors"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".BadgeView"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".InfoforGettingBadge"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Timeline"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:theme="@style/Base.Theme.AppCompat" />
+        <activity
+            android:name=".RequestHelp"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".HELPsection"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Descriptionsectionstudy"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Descriptionsectionother"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Descriptionsectionfood"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Descriptionsectioncloth"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Descriptionsectionblood"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Descriptionsection"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Typeyourown"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".carousalImage"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".specialEdition"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".earnedRewards"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".rewardsection"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".seethebadges"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".earnedbadgeSection"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".badgesection"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ImagePickerActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Viewimage"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ShowingImages"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".RequestVerification"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ProfileActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PickUpDetails"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MyDonation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MainActivity3"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MainActivity2"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Login"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Help"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".giverstudy"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".giverother"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".giverfood"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".givercloth"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".giverblood"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".giverblanket"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Donate"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".confirmSection"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".authentication"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Addphotos"
+            android:screenOrientation="portrait" />
+
+        <service
+            android:name=".FirebaseService"
+            android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.yalantis.ucrop.UCropActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+    </application>
+
+</manifest>

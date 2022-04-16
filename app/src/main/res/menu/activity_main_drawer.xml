@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_timeline"
+            android:icon="@android:drawable/ic_menu_recent_history"
+            android:title="Timeline" />
+
+
+    </group>
+
+
+    <item android:title="NEER SAHAYATA ASTRA">
+
+        <menu>
+            <item
+                android:id="@+id/nav_reg"
+                android:icon="@android:drawable/ic_menu_myplaces"
+                android:title="Registered NGO" />
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Share The App" />
+            <item
+                android:id="@+id/nav_aboutus"
+                android:icon="@android:drawable/stat_sys_headset"
+                android:title="About Us" />
+            <item
+                android:id="@+id/nav_faq"
+                android:icon="@android:drawable/ic_menu_help"
+                android:title="NSA FAQ" />
+            <item
+                android:id="@+id/nav_aryom"
+                android:icon="@drawable/ic_menu_manage"
+                android:title="About Developers" />
+            <item
+                android:id="@+id/nav_tc"
+                android:icon="@android:drawable/ic_dialog_info"
+                android:title="Terms and Conditions" />
+            <item
+                android:id="@+id/nav_privacy"
+                android:icon="@android:drawable/ic_lock_idle_lock"
+                android:title="Privacy Policy" />
+
+
+        </menu>
+    </item>
+
+
+</menu>

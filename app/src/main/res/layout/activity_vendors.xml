@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Vendors"
+    xmlns:gl="http://schemas.android.com/apk/res-auto"
+    android:background="@color/contentBodyColor">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="78dp"
+        android:background="@color/contentBodyColoroftimeline"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/tooltimeline"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/ic_rectwave"
+            android:textColor="@color/contentTextColor"
+            app:layout_collapseMode="pin">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/Transparentnavigation">
+
+                <ImageView
+                    android:id="@+id/imageView33"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_marginEnd="5dp"
+                    app:layout_constraintBottom_toTopOf="@+id/searchtoactivity"
+                    app:layout_constraintEnd_toStartOf="@+id/imageView21"
+                    app:layout_constraintStart_toEndOf="@+id/dropmeter"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/nsaicon"
+                    tools:ignore="VectorDrawableCompat" />
+
+                <ImageView
+                    android:id="@+id/imageView21"
+                    android:layout_width="56dp"
+                    android:layout_height="37dp"
+                    android:onClick="addcard"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.971"
+                    app:layout_constraintStart_toEndOf="@+id/textView9"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@android:drawable/ic_menu_add" />
+
+                <ImageView
+                    android:id="@+id/dropmeter"
+                    android:layout_width="45dp"
+                    android:layout_height="40dp"
+                    android:onClick="bck"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    gl:srcCompat="@drawable/profileback" />
+
+                <ImageView
+                    android:id="@+id/imageView35"
+                    android:layout_width="36dp"
+                    android:layout_height="38dp"
+                    app:layout_constraintEnd_toStartOf="@+id/searchtoactivity"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="@+id/dropmeter"
+                    app:layout_constraintTop_toTopOf="@+id/searchtoactivity"
+                    gl:srcCompat="@drawable/ic_searchicon"
+                    tools:ignore="VectorDrawableCompat" />
+
+                <EditText
+                    android:id="@+id/searchtoactivity"
+                    android:layout_width="238dp"
+                    android:layout_height="36dp"
+                    android:layout_marginTop="7dp"
+                    android:layout_marginEnd="16dp"
+                    android:background="@drawable/search_bg"
+                    android:hint="@string/text_hint"
+                    android:paddingLeft="10dp"
+                    android:textColor="@color/contentTextColor"
+                    android:textColorHint="@color/contentTextColor"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.65"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.85" />
+
+                <View
+                    android:id="@+id/view18"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@+id/searchtoactivity"
+                    app:layout_constraintHorizontal_bias="0.6"
+                    app:layout_constraintStart_toStartOf="@+id/searchtoactivity"
+                    app:layout_constraintTop_toTopOf="@+id/searchtoactivity" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="80dp">
+
+        <include
+            layout="@layout/activity_authentication"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </RelativeLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

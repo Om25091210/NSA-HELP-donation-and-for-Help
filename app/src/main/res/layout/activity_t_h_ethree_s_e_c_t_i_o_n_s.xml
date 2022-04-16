@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:gl="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/contentBodyColor"
+    tools:context=".THEthreeSECTIONS">
+
+
+    <View
+        android:id="@+id/view21"
+        android:layout_width="0dp"
+        android:layout_height="360dp"
+        android:background="@drawable/ic_diyatwo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/badgesection" />
+
+    <ImageView
+        android:id="@+id/imageView50"
+        android:layout_width="48dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="10dp"
+        android:onClick="closecut"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        gl:srcCompat="@drawable/ic_close_post"
+        tools:ignore="VectorDrawableCompat" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/quizes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        app:cardCornerRadius="15dp"
+        app:cardPreventCornerOverlap="true"
+        app:layout_constraintBottom_toTopOf="@+id/badgesection"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/polls">
+
+        <net.colindodd.gradientlayout.GradientRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:minHeight="100dp"
+            android:padding="10dp"
+            gl:end_color="@color/othergrad"
+            gl:orientation="LEFT_RIGHT"
+            gl:start_color="@color/rightcarddonaoranimals">
+
+            <ImageView
+                style="@style/homeCardImage"
+                android:maxHeight="90dp"
+                android:src="@drawable/ic_quizzzzzzz" />
+
+            <TextView
+                android:id="@+id/textViewsack"
+                style="@style/viewParent.headerText.HomeCardTitle"
+                android:text="QUIZZES" />
+
+        </net.colindodd.gradientlayout.GradientRelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/polls"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="20dp"
+        app:cardCornerRadius="15dp"
+        app:cardPreventCornerOverlap="true"
+        app:layout_constraintBottom_toTopOf="@+id/quizes"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/talks">
+
+        <net.colindodd.gradientlayout.GradientRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:minHeight="100dp"
+            android:padding="10dp"
+            gl:end_color="@color/rightcarddonaoranimals"
+            gl:orientation="LEFT_RIGHT"
+            gl:start_color="@color/leftcarddonaoranimals">
+
+            <ImageView
+                style="@style/homeCardImage"
+                android:maxHeight="90dp"
+                android:src="@drawable/ic_poll" />
+
+            <TextView
+                android:id="@+id/textViewSub5Title"
+                style="@style/viewParent.headerText.HomeCardTitle"
+                android:text="POLLS" />
+
+        </net.colindodd.gradientlayout.GradientRelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/talks"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="50dp"
+        app:cardCornerRadius="15dp"
+        app:cardPreventCornerOverlap="true"
+        app:layout_constraintBottom_toTopOf="@+id/polls"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.22000003">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/home_gradient_maths"
+            android:minHeight="100dp"
+            android:padding="10dp">
+
+            <ImageView
+                style="@style/homeCardImage"
+                android:maxHeight="90dp"
+                android:src="@drawable/ic_bagbazar" />
+
+            <TextView
+                android:id="@+id/textViewSub1Title"
+                style="@style/viewParent.headerText.HomeCardTitle"
+                android:text="BAZAAR" />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/badgesection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="50dp"
+        app:cardCornerRadius="15dp"
+        app:cardPreventCornerOverlap="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/quizes"
+        gl:end_color="@color/othergrad"
+        gl:orientation="LEFT_RIGHT"
+        gl:start_color="@color/rightcarddonaoranimals">
+
+        <net.colindodd.gradientlayout.GradientRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:minHeight="100dp"
+            android:padding="10dp"
+            gl:end_color="@color/othergrad"
+            gl:orientation="LEFT_RIGHT"
+            gl:start_color="@color/news">
+
+            <ImageView
+                style="@style/homeCardImage"
+                android:maxHeight="90dp"
+                android:src="@drawable/ic_prizeresult" />
+
+            <TextView
+                android:id="@+id/textViewprogress"
+                style="@style/viewParent.headerText.HomeCardTitle"
+                android:text="ACHIEVEMENTS" />
+
+        </net.colindodd.gradientlayout.GradientRelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
